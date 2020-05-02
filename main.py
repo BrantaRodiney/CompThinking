@@ -1,4 +1,4 @@
-import datetime #informa ano atual - ATP ETAPA2
+import datetime
 
 def obter_limite():
     cargo_atual = str(input("Para fazermos sua analise de credito, "
