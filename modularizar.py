@@ -39,8 +39,7 @@ else:
 
 
 def ContaCaracter(contador):
-    resultado =  len(contador)
-    return resultado
+    return len(contador)
 
 
 def CaracteresPrimeiroNome(meuNomeCompleto):
