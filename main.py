@@ -14,7 +14,6 @@ def limpar_tela():
 
 
 def obter_limite(salario_atual, idade_aproximada):
-    valor_credito_disponivel = ((salario_atual*(idade_aproximada / 1000)) +100) 
     return ((salario_atual*(idade_aproximada / 1000)) +100) 
 
 
