@@ -1,17 +1,15 @@
 import datetime
-import os
 
 
-def obter_limite(limpar_tela):
+def obter_limite():
     NOME_COMPLETO = "Rodiney Branta"
     print(f"Seja bem-vindo a Poppy loja , sou {NOME_COMPLETO}, entre e escolha um produto\n")
+    ano_atual = datetime.datetime.today()
     cargo_atual = str(input("Para fazermos sua análise de crédito, precisamos que você entre com algumas informações:\nCargo atual:"))
     salario_atual = float(input("Salario Atual:"))
     ano_de_nascimento = int(input("Ano de nascimento:"))
-    ano_atual = datetime.datetime.today()
     idade_aproximada = (ano_atual.year - ano_de_nascimento)
     credito = ((salario_atual*(idade_aproximada/1000))+100)
-    limpar_tela()
     print(f"\nSeu cargo atual: {cargo_atual} \nSeu salário atual: {salario_atual} \n"
             f"Seu ano de nascimento: {ano_de_nascimento}\n"
             f"Voce possui R$ {credito:.2f} em créditos disponíveis para compras em nossa loja.\n")
@@ -39,12 +37,8 @@ def verificar_produto(limite_de_gastos):
         print(f"O valor do produto com descosto é: R$ {valor_total_com_desconto}")
 
 
-limite = obter_limite(limpar_tela())
+limite = obter_limite()
 
 conta_produtos_cadastros = int(input("\nInforme quantos produtos você deseja cadastrar: "))
-
 for contador in range(conta_produtos_cadastros):
     verificar_produto(limite)
-
-print("\nAperte a tecla ENTER para sair")
-input()
