@@ -10,9 +10,10 @@ def obter_limite():
     ano_de_nascimento = int(input("Ano de nascimento:"))
     idade_aproximada = (ano_atual.year - ano_de_nascimento)
     credito = ((salario_atual*(idade_aproximada/1000))+100)
-    print(f"\nSeu cargo atual: {cargo_atual} \nSeu salário atual: {salario_atual} \n"
-            f"Seu ano de nascimento: {ano_de_nascimento}\n"
-            f"Voce possui R$ {credito:.2f} em créditos disponíveis para compras em nossa loja.\n")
+    print(f"Seu cargo atual: {cargo_atual}")
+    print(f"Seu Salario atual: {salario_atual}")
+    print(f"Seu ano de nascimento: {ano_de_nascimento}")
+    print(f"Voce possui R$ {credito:.2f} em créditos disponíveis para compras em nossa loja.")
     return credito, idade_aproximada, NOME_COMPLETO
 
 
