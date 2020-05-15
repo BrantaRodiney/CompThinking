@@ -5,7 +5,8 @@ def obter_limite():
     NOME_COMPLETO = "Rodiney Branta"
     print(f"Seja bem-vindo a Poppy loja , sou {NOME_COMPLETO}, entre e escolha um produto\n")
     ano_atual = datetime.datetime.today()
-    cargo_atual = str(input("Para fazermos sua análise de crédito, precisamos que você entre com algumas informações:\nCargo atual:"))
+    print(f"Para fazermos sua análise de crédito, precisamos que você entre com algumas informações:")
+    cargo_atual = str(input("Cargo atual:"))
     salario_atual = float(input("Salario Atual:"))
     ano_de_nascimento = int(input("Ano de nascimento:"))
     idade_aproximada = (ano_atual.year - ano_de_nascimento)
